@@ -126,7 +126,7 @@ Exclude:
 
 ## Decision Recommendation
 
-**REVISE**
+Decision: REVISE
 
 The idea has potential, but the initial scope is too broad. The CRM direction should be deferred. Focus on paid validation of lead research quality and outreach insight for one narrow customer segment.
 
