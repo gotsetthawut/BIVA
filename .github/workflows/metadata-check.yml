@@ -1,0 +1,24 @@
+name: Metadata Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  metadata-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check knowledge base metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          missing=0
+          while IFS= read -r file; do
+            if ! grep -q "## Metadata" "$file"; then
+              echo "Missing metadata: $file"
+              missing=1
+            fi
+          done < <(find knowledge_base -mindepth 2 -name "*.md" -type f)
+          exit "$missing"

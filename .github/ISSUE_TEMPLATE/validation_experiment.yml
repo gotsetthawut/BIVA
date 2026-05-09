@@ -1,0 +1,40 @@
+name: Validation Experiment
+description: Define or track a validation experiment.
+title: "VAL: "
+labels: ["validation"]
+body:
+  - type: input
+    id: idea_id
+    attributes:
+      label: Idea ID
+      placeholder: IDEA-0001
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: What assumption will this experiment test?
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method
+      description: How will the experiment run?
+    validations:
+      required: true
+  - type: input
+    id: success_metric
+    attributes:
+      label: Success Metric
+      description: What measurable result would support the hypothesis?
+    validations:
+      required: true
+  - type: textarea
+    id: decision_rule
+    attributes:
+      label: Decision Rule
+      description: What result leads to GO, REVISE, HOLD, or NO-GO?
+    validations:
+      required: true

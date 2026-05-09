@@ -8,9 +8,8 @@ This project follows a simple chronological changelog format.
 
 ### Added
 
-- Placeholder for future multi-agent expansion.
-- Placeholder for Claude Projects and Claude Cowork setup improvements.
-- Placeholder for Notion, n8n, LangGraph, vector database, and GitHub Actions integrations.
+- Placeholder for future specialist agents beyond BIVA.
+- Placeholder for Notion, n8n, LangGraph, and vector database integrations.
 
 ### Changed
 
@@ -19,6 +18,21 @@ This project follows a simple chronological changelog format.
 ### Removed
 
 - TBD
+
+## [0.2.0] - 2026-05-09
+
+### Added
+
+- Claude skill-style workflow instructions for idea intake, market research, validation plans, decision logs, and investor briefs.
+- Evidence Ladder framework for scoring evidence strength.
+- Customer Discovery framework for interview quality and behavior-based learning.
+- Value Proposition Canvas framework for customer jobs, pains, gains, and value fit.
+- AI Risk RMF framework and governance guidance for validating AI-native business ideas.
+- Assumption register, evidence log, customer interview, interview notes, problem discovery, value proposition, and AI risk review templates.
+- BIVA output eval rubric, sample inputs, expected outputs, and scoring criteria.
+- GitHub issue templates for idea intake, validation experiments, and research tasks.
+- Starter GitHub Actions workflows for markdown linting, link checking, and metadata checks.
+- AI governance documentation.
 
 ## [0.1.0] - 2026-05-09
 

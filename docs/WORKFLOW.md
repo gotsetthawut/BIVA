@@ -11,11 +11,12 @@ This workflow defines how ideas move through the StarStart Business Validation S
 3. Market Validation
 4. Feasibility Analysis
 5. Competitive Analysis
-6. Validation Plan
-7. MVP Recommendation
-8. Risk Analysis
-9. Decision Recommendation
-10. Knowledge Base Storage
+6. Evidence Scoring
+7. Validation Plan
+8. MVP Recommendation
+9. Risk Analysis
+10. Decision Recommendation
+11. Knowledge Base Storage
 
 ## Step 1: Idea Intake
 
@@ -84,7 +85,20 @@ Map:
 
 Competitive analysis can be included in market research, feasibility analysis, or a business case.
 
-## Step 6: Validation Plan
+## Step 6: Evidence Scoring
+
+Use `frameworks/EVIDENCE_LADDER.md` and `templates/EVIDENCE_LOG_TEMPLATE.md`.
+
+Score the strongest available evidence for each core claim. BIVA should not recommend GO unless the decision is supported by behavior-based evidence or a clear, low-cost next step.
+
+Output may include:
+
+```text
+templates/EVIDENCE_LOG_TEMPLATE.md
+templates/ASSUMPTION_REGISTER_TEMPLATE.md
+```
+
+## Step 7: Validation Plan
 
 Use `templates/VALIDATION_PLAN_TEMPLATE.md`.
 
@@ -96,7 +110,7 @@ Output location:
 knowledge_base/04_Validation_Plans/
 ```
 
-## Step 7: MVP Recommendation
+## Step 8: MVP Recommendation
 
 Define:
 
@@ -109,7 +123,7 @@ Define:
 
 The MVP recommendation should be included in the validation plan.
 
-## Step 8: Risk Analysis
+## Step 9: Risk Analysis
 
 Analyze:
 
@@ -119,10 +133,19 @@ Analyze:
 - Competitive risk
 - Legal or ethical risk
 - Execution risk
+- AI-specific risk when AI, automation, personal data, or generated outputs are involved
 
 Each risk should have a mitigation or validation method.
 
-## Step 9: Decision Recommendation
+For AI-native ideas, use:
+
+```text
+frameworks/AI_RISK_RMF.md
+templates/AI_RISK_REVIEW_TEMPLATE.md
+docs/AI_GOVERNANCE.md
+```
+
+## Step 10: Decision Recommendation
 
 Use the decision options:
 
@@ -139,7 +162,7 @@ Output location:
 knowledge_base/06_Decision_Logs/
 ```
 
-## Step 10: Knowledge Base Storage
+## Step 11: Knowledge Base Storage
 
 Save all outputs in the correct folder using the naming convention:
 
@@ -165,8 +188,10 @@ Use this sequence inside Claude Projects:
 2. Use /templates/IDEA_INTAKE_TEMPLATE.md to structure the idea.
 3. Identify missing information and assumptions.
 4. Use /frameworks/LEAN_STARTUP.md to design experiments.
-5. Use /frameworks/STAGE_GATE.md to recommend a decision.
-6. Save outputs using /docs/NAMING_CONVENTION.md.
+5. Use /frameworks/EVIDENCE_LADDER.md to score evidence.
+6. Use /frameworks/STAGE_GATE.md to recommend a decision.
+7. Use /evals/biva_output_rubric.md to self-check quality.
+8. Save outputs using /docs/NAMING_CONVENTION.md.
 ```
 
 ## Quality Bar
@@ -175,8 +200,10 @@ Every completed analysis should:
 
 - State the target customer clearly.
 - Separate evidence from assumptions.
+- Score evidence quality.
 - Identify the riskiest assumptions.
 - Recommend specific validation experiments.
+- Review AI risk when relevant.
 - Include decision criteria.
 - Link related documents.
 - Avoid unsupported claims.

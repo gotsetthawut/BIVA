@@ -43,6 +43,12 @@ Summarize the decision in 3-5 sentences.
 | --- | --- | --- | --- |
 | TBD | TBD | Low / Medium / High | TBD |
 
+## Evidence Ladder Rating
+
+| Core Claim | Evidence Level | Confidence | Decision Implication |
+| --- | --- | --- | --- |
+| TBD | 0-6 | Low / Medium / High | TBD |
+
 ## Key Assumptions
 
 | Assumption | Status | Notes |

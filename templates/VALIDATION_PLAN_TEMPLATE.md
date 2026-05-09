@@ -28,6 +28,14 @@ Define what must be learned before investing further.
 | 2 | TBD | Viability | TBD |
 | 3 | TBD | Feasibility | TBD |
 
+## Evidence Target
+
+Use `frameworks/EVIDENCE_LADDER.md` to define the evidence level each experiment should produce.
+
+| Experiment | Target Evidence Level | Why This Level Matters |
+| --- | --- | --- |
+| TBD | 3-5 | TBD |
+
 ## Experiment Plan
 
 ### Experiment 1: Customer Discovery Interviews
@@ -39,6 +47,7 @@ Define what must be learned before investing further.
 | Audience | TBD |
 | Timeline | TBD |
 | Success Metric | TBD |
+| Target Evidence Level | 3 |
 | Decision Rule | TBD |
 
 ### Experiment 2: Landing Page or Offer Test

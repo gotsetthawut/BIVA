@@ -8,6 +8,16 @@ This folder stores AI agent definitions for the StarStart Business Validation Sy
 | --- | --- |
 | `BIVA_AGENT.md` | Main Business Idea Validation Analyst and decision coordinator. |
 
+## Claude Skills
+
+Task-specific Claude workflow instructions live in:
+
+```text
+.claude/skills/
+```
+
+These skills help Claude load focused instructions for intake, market research, validation planning, decision logging, and investor briefs.
+
 ## Future Agent Placeholders
 
 Future agents may include:
@@ -19,6 +29,8 @@ Future agents may include:
 - Product Strategy Agent
 - Growth Experiment Agent
 - Knowledge Base Librarian Agent
+- AI Risk Review Agent
+- Evidence Quality Agent
 
 ## Agent Design Rule
 

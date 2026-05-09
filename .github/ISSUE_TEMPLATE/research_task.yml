@@ -1,0 +1,39 @@
+name: Research Task
+description: Track market, competitor, customer, or feasibility research.
+title: "RESEARCH: "
+labels: ["research"]
+body:
+  - type: input
+    id: idea_id
+    attributes:
+      label: Idea ID
+      placeholder: IDEA-0001
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: Research Question
+      description: What question should this research answer?
+    validations:
+      required: true
+  - type: dropdown
+    id: research_type
+    attributes:
+      label: Research Type
+      options:
+        - Market
+        - Customer
+        - Competitor
+        - Feasibility
+        - AI Risk
+        - Pricing
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected Output
+      description: What artifact should be produced?
+    validations:
+      required: true
